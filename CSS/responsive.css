@@ -1,6 +1,14 @@
 /* 1024px small labtops */
 @media(max-width:1024px){
-
+ .about-section .about-us{
+    flex-direction: column;
+ }
+ .about-section .about-us .left img{
+height: auto;
+ }
+ .contact-section .contact-container{
+    flex-direction: column-reverse;
+ }
 }
 
 /* 760px tablets */
@@ -70,5 +78,9 @@
 
 .product-gallery .gallery-item img{
     height: 150px;
+}
+.hero-general header h1{
+    font-size: 2rem;
+
 }
 }
