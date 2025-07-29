@@ -509,24 +509,25 @@ footer .footer-bottom{
     max-width: 1200px;
     width: 90%;
 }
-.product-section .product-container .product-gallery{
+.product-section .product-container .product-view-gallery{
     flex: 1;
 }
-.product-section .product-container .product-gallery .thumbnail-list{
+.product-section .product-container .product-view-gallery .thumbnail-list{
 display: grid;
 gap: 10px;
 grid-template-columns: repeat(4,1fr);
 }
-.product-section .product-container .product-gallery .thumbnail-list img{
-height: 100px;
+.product-section .product-container .product-view-gallery .thumbnail-list img{
+height: 120px;
 width: 100%;
 object-fit: contain;
 background-color: #f7f7f7;
 border-radius: 8px;
 cursor: pointer;
+
 }
 .product-section .product-container .product-gallery .thumbnail-list .active{
-border: 1px solid var(--color-primary);
+border: 2px solid var(--color-primary);
 
 }
 .product-section .product-container .product-gallery .main-image img{
@@ -540,6 +541,61 @@ border: 1px solid var(--color-primary);
 .product-section .product-container .product-details{
     flex: 1;
 }
+.product-section.product-details .product-title {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: var(--text-primary);
+    margin-bottom: 15px;
+
+}
+.product-section .product-details .product-price{
+    font-size: 2rem;
+    font-weight: 600;
+}
+.product-section .product-details .product-size{
+    padding: 8px 12px;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    margin-top: 8px;
+    cursor: pointer;
+}
+
+.product-section .product-details .add-to-cart-container{
+    display: flex;
+    gap: 10px;
+    margin-top: 12px;
+
+}
+.product-section .product-details .quantity-input{
+    width: 60px;
+    padding: 8px;
+    border: 1px solid lightgray;
+    font-size: 1rem;
+    border-radius: 5px;
+}
+.product-section .product-details .add-to-cart-btn{
+    background-color: var(--color-primary);
+    color: white;
+    border: none;
+    padding:8px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.product-section .product-details .add-to-cart-btn:hover{
+    background-color: var(--hover);
+}
+.product-section .product-details .details-heading{
+font-size: 1.2rem;
+font-weight: 500;
+color: var(--text-primary);
+margin: 10px 0;
+}
+.product-section .product-details .product-description{
+    font-size: 0.95rem;
+    color: var(--text-secondary);
+    line-height: 1.5rem;
+}
+
 .product-section .product-container {
     display: flex;
     gap: 20px;

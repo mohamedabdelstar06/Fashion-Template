@@ -19,3 +19,15 @@ window.addEventListener("scroll", () => {
     navbar.classList.remove("fixed-nav");
   }
 });
+const currentImage = document.getElementById("current-img");
+  const thumbnails = document.querySelectorAll(".thumbnail"); // اسم صحيح
+
+  thumbnails.forEach(thumbnail => {
+    thumbnail.addEventListener("click", function () {
+      currentImage.src = this.src;
+
+      thumbnails.forEach(t => t.classList.remove("active")); // نفس الاسم
+
+      this.classList.add("active");
+    });
+  });

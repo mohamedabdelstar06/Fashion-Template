@@ -32,15 +32,15 @@
         </nav>
         <section class="product-section">
             <div class="product-container">
-                <div class="product-gallery">
+                <div class="product-view-gallery">
                    <div class="main-image">
-                        <img src="img/gallery-item-1.png" alt="gallery-item">
+                        <img src="img/gallery-item-1.png" alt="gallery-item"  id="current-img">
                    </div>
                    <div class="thumbnail-list">
-                    <img src="img/gallery-item-1.png" alt="thumbnail">
-                    <img src="img/gallery-item-2.png" alt="thumbnail">
-                    <img src="img/gallery-item-3.png" alt="thumbnail">
-                    <img src="img/gallery-item-4.png" alt="thumbnail">
+                    <img src="img/gallery-item-1.png" alt="thumbnail" class="active thumbnail">
+                    <img src="img/gallery-item-2.png" alt="thumbnail" class="thumbnail">
+                    <img src="img/gallery-item-3.png" alt="thumbnail" class="thumbnail">
+                    <img src="img/gallery-item-4.png" alt="thumbnail" class="thumbnail">
                    </div>
                 </div>
                 <div class="product-details">
@@ -55,6 +55,7 @@
                         <option value="XL">Extra Large (XL)</option>
                     </select>
                   </div>
+                  
                   <div class="add-to-cart-container">
                     <input type="number" min="1" value="1" class="quantity-input" id="">
                     <button class="add-to-cart-btn">Add to cart</button>
@@ -69,8 +70,81 @@
                 </div>
             </div>
         </section>
+            <section class="latest-section">
+         <div class="header">
+            <h1>Similar Products</h1>
+            <p>Discover the latest styles freshly added to our collection.</p>
+        </div>
+          <div class="product-gallery">
+         <a href="product.html" class="gallery-item">
+                <img src="img/product-5.png" alt="">
+                <p class="product-title">Classic Denim Jacket</p>
+                <p class="product-price">$49.99</p>
+            </a>
+             <a href="product.html" class="gallery-item">
+                <img src="img/product-6.png" alt="">
+                <p class="product-title">Classic Denim Jacket</p>
+                <p class="product-price">$49.99</p>
+            </a>
+             <a href="product.html" class="gallery-item">
+                <img src="img/product-7.png" alt="">
+                <p class="product-title">Classic Denim Jacket</p>
+                <p class="product-price">$49.99</p>
+            </a>
+             <a href="product.html" class="gallery-item">
+                <img src="img/product-8.png" alt="">
+                <p class="product-title">Classic Denim Jacket</p>
+                <p class="product-price">$49.99</p>
+            </a>
+            </div>
+    </section>
        
-
+ <footer>
+        <div class="footer-container">
+            <div class="footer-about">
+                <p class="logo">Fashion</p>
+                <p class="">UrbanWear brings you curated collections of modern, occasion</p>
+                <div class="social-icons">
+                    <a href="facebook.com"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="facebook.com"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="facebook.com"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="facebook.com"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+            <div class="quick-links">
+                <h3>Shop</h3>
+                <ul>
+                    <li><a href="#">New Arrivals</a></li>
+                    <li><a href="#">Featured products</a></li>
+                    <li><a href="#">On Sale</a></li>
+                    <li><a href="#">Categories</a></li>
+                    <li><a href="#">Best Sellers</a></li>
+                </ul>
+            </div>
+            <div class="quick-links">
+                <h3>Customer Service</h3>
+                <ul>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Shipping and returns</a></li>
+                    <li><a href="#">Terms & conditions</a></li>
+                    <li><a href="#">Privacy policy</a></li>
+                </ul>
+            </div>
+            <div class="newsletter">
+                <h3>Stay Updated</h3>
+                <p>Subscribe to get the latest updates on new arrivals and special offers</p>
+                <form action="">
+                    <input type="email" placeholder="Enter your email">
+                    <button type="submit">Subscribe</button>
+                </form>
+                <img src="img/payments.png" alt="paymemnt-methods">
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; DEV: Mohamed Abdelstar Abdelkader.</p>
+        </div>
+    </footer>
          
     
     <script src="JS/script.js"></script>

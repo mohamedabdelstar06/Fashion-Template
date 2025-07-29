@@ -9,6 +9,9 @@ height: auto;
  .contact-section .contact-container{
     flex-direction: column-reverse;
  }
+ .product-section .product-container{
+    flex-direction: column;
+ }
 }
 
 /* 760px tablets */
@@ -62,6 +65,7 @@ height: auto;
         flex-direction: column;
         padding-top: 20px;
     }
+ 
 }
 
 /* 600px mobile phones */
@@ -82,5 +86,15 @@ height: auto;
 .hero-general header h1{
     font-size: 2rem;
 
+}
+.product-section .product-container .product-view-gallery .thumbnail-list img{
+    height: 60px;
+}
+
+.product-section .product-container .product-gallery .main-image img{
+    height: 450px;
+}
+.hero-general{
+    height: 300px;
 }
 }
